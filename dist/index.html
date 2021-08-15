@@ -1,104 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SoftCloud | Web Development Agency</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!--side navigation -->
-    <div class="sidenav">
-      <div class="container w-80">
-        <a href="home" class="logo-text">SoftCloud</a>
-        <div class="sidenav-menu-box">
-          <ul class="side-menu menu">
-            <li class="menu-item">
-              <a href="services.html">Services</a>
-            </li>
-            <li class="menu-item">
-              <a href="project.html">Project</a>
-            </li>
-            <li class="menu-item">
-              <a href="about.html">About</a>
-            </li>
-            <li class="menu-item">
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoftCloud | Web Development Agency</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!--side navigation -->
+  <div class="sidenav">
+    <div class="container w-80">
+      <a href="home" class="logo-text">SoftCloud</a>
+      <div class="sidenav-menu-box">
+        <ul class="side-menu menu">
+          <li class="menu-item">
+            <a href="services.html">Services</a>
+          </li>
+          <li class="menu-item">
+            <a href="project.html">Project</a>
+          </li>
+          <li class="menu-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div class="main">
-      <header>
-        <a href="home" class="logo-text">SoftCloud</a>
-        <i class="fas fa-bars text-lg" onclick="toggleMobileNav('open')"></i>
-      </header>
+  <div class="main">
+    <header>
+      <a href="home" class="logo-text">SoftCloud</a>
+      <i class="fas fa-bars text-lg" onclick="toggleMobileNav('open')"></i>
+    </header>
 
-      <div class="main-body">
+    <div class="main-body">
+      <!-- Landing -->
+      <section class="landing">
         <div class="container">
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
+          <div class="landing-content">
+            <p class="header-text">
+              Create Your Website and Get Discovered by New Customers
+            </p>
+            <p class="body-text">
+              Businesses that maintain an online presence tend to perform
+              better than those that doesn't. More transactions are been done
+              online and every business regardless of size would benefit
+              financially from having a website.
+            <p class="body-text">
+              Let us help you build your
+              own custom web application today.
+            </p>
+            </p>
 
-          <p>Main body lorem100</p>
-
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
-          <p>Main body lorem100</p>
+            <a href="contact" class="btn btn-sm btn-white mt-1">
+              <span>Get A Website</span><i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
+      </section>
+
+      <!-- Services Section  -->
+      <section class="services">
+        <div class="section-content">
+          <div class="section-header">
+            <p class="text-primary">Beyond Just a Website</p>
+          </div>
+
+          <div class="services-box">
+            <div class="service-img">
+              <img src="./assets/img/press.jpg" alt="" srcset="" />
+            </div>
+            <ul class="service-list">
+              <li class="service-item">
+                <h4>Increase your reach</h4>
+                <p>
+                  Leveraging on the power of internet to reach out to
+                  potential customers.
+                </p>
+              </li>
+              <li class="service-item">
+                <h4>Boost productivity</h4>
+                <p>
+                  Monitor your business platform from any device, anywhere and
+                  at anytime. Rendering services to customers is just a click
+                  away.
+                </p>
+              </li>
+              <li class="service-item">
+                <h4>Maximize Revenue</h4>
+                <p>
+                  Automation systems which help in notification, security and
+                  monitoring helps save resource for your business
+                </p>
+              </li>
+              <li class="service-item">
+                <a href="services.html" class="trans-link">
+                  <span>Learn More</span><i class="fas fa-arrow-right"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects">
+        <div class="section-content">
+          <div class="section-header">
+            <p class="text-primary">Transform your business process from manual to digital</p>
+            <p class="section-text">Our customers needs are placed in mind when delivering solutions. Each and every
+              software developed is aimed at meeting your specifications and aiding easy transition of your business
+              into the digital landscape</p>
+          </div>
+
+          <div class="project-box">
+            <div class="project-slider">
+              <div class="project-item">
+                <div class="project-img">
+                  <img src="./assets/img/dabskic.svg" alt="dabskic">
+                </div>
+                <p class="project-name">Dabskic</p>
+                <p class="project-detail">
+                  Dabskic is an engineering firm. For this client, we designed a basic professional website where
+                  visitors can obtain information concerning the firm. The services offered by the company, gallery of
+                  project done and contact info are accessible on the website
+                </p>
+                <a href="https://www.dabskic.com" class="trans-link mb-1">
+                  <span>Learn More</span><i class="fas fa-arrow-right"></i></a>
+              </div>
+
+              <div class="project-item">
+                <div class="project-img">
+                  <img src="./assets/img/oghenemaro.png" alt="oghenemaro">
+                </div>
+                <p class="project-name">Oghenemaro</p>
+                <p class="project-detail">
+                  This is a portfolio site for the customer. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aut ipsum repellat voluptas laboriosam sit officia quis est rem atque eveniet omnis, harum laudantium
+                  ab adipisci eum at dolorum, ratione quo.
+                </p>
+                <a href="https://www.oghenemaro.com" class="trans-link mb-1">
+                  <span>Learn More</span><i class="fas fa-arrow-right"></i></a>
+              </div>
+
+              <div class="project-item">
+                <div class="project-img">
+                  <img src="./assets/img/arierelogo (1).svg" alt="arpub">
+                </div>
+                <p class="project-name">Ariere Publication</p>
+                <p class="project-detail">
+                  This customer needed a blog site with content management system. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Laborum, voluptatum nobis. Magni maxime optio fugiat repellendus,
+                  perferendis ex amet itaque!
+                </p>
+                <a href="https://arpublication.herokuapp.com/" class="trans-link mb-1">
+                  <span>Learn More</span><i class="fas fa-arrow-right"></i></a>
+              </div>
+
+              <div class="project-item">
+                <div class="project-img">
+                  <img src="./assets/img/XChange.svg" alt="arpub">
+                </div>
+                <p class="project-name">XChange</p>
+                <p class="project-detail">
+                  An Ecommerce platform. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis obcaecati
+                  minima sequi error assumenda id a. Dignissimos quas sapiente impedit!
+                </p>
+                <a href="https://omarookolosio94.github.io/xchange/" class="trans-link mb-1">
+                  <span>Learn More</span><i class="fas fa-arrow-right"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-box">
+          <div class="contact-text">
+            <h6>Let's Build Your Dream Site</h6>
+            <p>Just tell us what you want and be rest assured we will build it for you</p>
+          </div>
+          <a href="contact.html" class="btn btn-white btn-sm"><span>Start Building</span><i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="mobile-nav" class="sidenav-mobile close">
+    <i class="fas fa-times text-lg my-1" onclick="toggleMobileNav('close')"></i>
+    <div class="container">
+      <div class="sidenav-menu-box">
+        <ul class="mobile-menu menu">
+          <li class="menu-item">
+            <a href="services.html">Services</a>
+          </li>
+          <li class="menu-item">
+            <a href="project.html">Project</a>
+          </li>
+          <li class="menu-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div id="mobile-nav" class="sidenav-mobile">
-      <i
-        class="fas fa-times text-lg my-1"
-        onclick="toggleMobileNav('close')"
-      ></i>
-      <div class="container">
-        <div class="sidenav-menu-box">
-          <ul class="mobile-menu menu">
-            <li class="menu-item">
-              <a href="services.html">Services</a>
-            </li>
-            <li class="menu-item">
-              <a href="project.html">Project</a>
-            </li>
-            <li class="menu-item">
-              <a href="about.html">About</a>
-            </li>
-            <li class="menu-item">
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 
-    <script src="./js/main.js"></script>
-  </body>
 </html>
