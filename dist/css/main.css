@@ -776,7 +776,6 @@ header a {
 
 .main-body {
   margin-top: 0;
-  margin-bottom: 2rem;
 }
 
 /* side nav mobile */
@@ -1023,9 +1022,11 @@ header a {
 
 /* Contact us */
 .contact-section {
-  background: var(--primary-gradient);
-  background: var(--secondary);
-  height: 50vh;
+  background: var(--primary-gradient-transparent),
+    url("../assets/img/online.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
   margin-top: -8rem;
   padding: 4rem 0 2rem;
   width: 90%;
@@ -1047,13 +1048,46 @@ header a {
   color: var(--white);
 }
 
-.contact-box .btn.btn-white:hover {
-  background: var(--primary);
-}
-
 .contact-text p {
   color: var(--white);
 }
+
+.footer-section {
+  padding: 2rem;
+  width: 90%;
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.footer-text {
+  width: 50%;
+}
+
+.footer-policy {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.footer-policy .copy-links {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.copy-links li {
+  margin-right: 15px;
+}
+
+.copy-links a {
+  color: white;
+}
+
+/* Footer Section */
 
 /* Media Query */
 @media (min-width: 1100px) {
@@ -1111,9 +1145,16 @@ header a {
     width: 100%;
   }
 
+  .footer-section {
+    width: 100%;
+  }
+
   .contact-box {
     margin-left: 20px;
     width: 95%;
+  }
+  .footer-policy {
+    width: 90%;
   }
 }
 
@@ -1196,9 +1237,26 @@ header a {
 
   .contact-box {
     display: block;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .contact-text {
     margin-bottom: 2rem;
+  }
+
+  .footer-text {
+    width: 90%;
+  }
+
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-policy {
+    display: block;
+  }
+  .footer-policy .copy-links {
+    margin-top: 1rem;
   }
 }
