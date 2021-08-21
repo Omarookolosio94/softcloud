@@ -1053,7 +1053,7 @@ header a {
 }
 
 .footer-section {
-  padding: 2rem;
+  padding: 4rem 2rem 2rem;
   width: 90%;
   background: var(--secondary);
   color: var(--white);
@@ -1077,6 +1077,13 @@ header a {
   height: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 1.5rem;
+}
+
+.footer-section i.fab {
+  font-size: var(--lg);
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 .copy-links li {
@@ -1250,7 +1257,8 @@ header a {
   }
 
   .footer-section {
-    padding: 20px;
+    padding: 40px 20px 20px;
+    text-align: center;
   }
 
   .footer-policy {
@@ -1258,5 +1266,6 @@ header a {
   }
   .footer-policy .copy-links {
     margin-top: 1rem;
+    justify-content: center;
   }
 }

@@ -1,3 +1,5 @@
+document.querySelector(".footer-year").innerHTML = new Date().getFullYear();
+
 //.querySelector(".footer-year").innerHTML = new Date().getFullYear();
 var mobile_nav = document.getElementById("mobile-nav");
 var htmlBody = document.getElementsByTagName("body")[0];
@@ -15,39 +17,6 @@ function toggleMobileNav(status) {
     htmlBody.classList.remove("shadow");
   }
 }
-
-/*
-$(window).on("load resize", function () {
-  var width = $(document).width();
-
-  if (width > 700) {
-    $(".project-slider").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 900,
-          settings: {
-            variableWidth: true,
-          },
-        },
-      ],
-    });
-  } else {
-    $(".project-slider").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      arrows: false,
-      settings: "unslick",
-    });
-  }
-});
-*/
 
 $(".project-slider").slick({
   slidesToShow: 3,
