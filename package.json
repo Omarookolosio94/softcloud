@@ -4,7 +4,7 @@
   "description": "Web Agency",
   "main": "main.js",
   "scripts": {
-    "deploy": "gh-pages -d dist -b main --remote gh-pages"
+    "deploy": "gh-pages -d dist -r gh-pages"
   },
   "keywords": [
     "web",
